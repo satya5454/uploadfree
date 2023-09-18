@@ -1,0 +1,423 @@
+*{
+    padding: 0px;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+                                         /* Home part  */
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+}
+nav{
+    background-color: #d3a5a5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+nav h1{
+    font-size: 27px;
+    margin-left: 10px;
+}
+span{
+    color: darkred;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 15px 15px;
+    margin: auto;
+}
+nav ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0px;
+}
+nav ul li a:hover{
+    color: darkred;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    transform: scaleY(1.2);
+    transition: all 0.1s linear;
+
+}
+.btn{
+    color: white;
+    padding: 7px 20px;
+    background-color: darkred;
+    font-size: 18px;
+    border: none;
+    border-radius: 18px;
+    transition: transform 0.5s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.detail{
+    margin-top: 12%;
+    margin-left: 8%;
+    margin-bottom: 50px;
+}
+.detail h1{
+    font-size: 27px;
+    padding: 10px 0px;
+}
+.detail h3{
+    width: 310px;
+    font-size: 22px;
+    color: white;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.detail h3:before{
+    content: "I'm a Front End Developer.. ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: darkred;
+    overflow: hidden;
+    border-right: 4px solid darkred;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+.detail h4{
+    margin-bottom: 10px;
+}
+.detail p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 35px;
+}
+.detail a{
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-weight: bold;
+    margin-left: 65px;
+    margin-bottom: 50px;
+}
+.images{
+    width: 50%; 
+    height: 95%;
+    position: absolute;
+    bottom: -15%;
+    right: 20px; 
+}
+.images img{
+    height: 70%;
+    position: absolute;
+    left: 30%;
+    transform: translateX(-10%);
+    transition: all 1s;
+}
+.images .shape{
+    width: 50%;
+    height: 50%;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.images:hover .boy{
+    height: 465px;
+    left: 35%;
+}
+
+                            /* About Part */
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(198, 182, 182);
+}
+.bigone{
+    position: relative;
+    width: 450px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#e19292, #747abf);
+    border-radius: 30%;
+    margin-top: 12%;
+    margin-left: 10%;
+}
+.bigone img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 350px;
+    transition: all 1s;
+}
+.bigone:hover img{
+    height: 400px;
+    left: 80%;
+}
+.box{
+    width: 50%;
+    height: 100vh;
+    margin-left: 15%;
+    margin-top: 10%;
+    padding: 20px 10px;
+}
+.box h1{
+    font-weight: bold;
+    padding: 10px 15px;
+    color: black;
+    font-size: 54px;
+}
+.box h4{
+    font-size: 24px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.box p{
+    line-height: 20px;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.box .lets{
+    text-decoration: none;
+    margin-left: 90px;
+    color: white;
+    padding: 8px 20px;
+    background-color: darkred;
+    font-size: 18px;
+    border: none;
+    border-radius: 18px;
+    transition: all 0.5s;
+}
+/* .box:hover .lets{
+   transform: scale(1.3);
+} */
+                                    /* Our Service part */
+.section{
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0px;
+    background-color: #dac7c7;
+}
+.tittle h2{
+    width: 1130px;
+    color: black;
+    font-size: 65px;
+    text-align: center;
+    margin: 30px auto;
+}
+.boxone{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    width: 340px;
+    height: 330px;
+    padding: 10px 20px;
+    background: linear-gradient(#d79898, #9399df);    
+    border-radius: 25px;
+    margin: 15px;
+    /* position: relative; */
+    text-align: center;
+}
+.card i{
+    padding: 5px;
+
+}
+.card h3{
+    font-size: 22px;
+    color: darkred;
+    justify-content: center;
+    margin: 15px 25px;
+}
+.card p{
+    line-height: 20px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    font-weight: 50px;
+}
+.card a{
+    padding: 10px 25px;
+    color: white;
+    border: 2px solid darkred;
+    border-radius: 25px;
+    background-color: darkred;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+                            /* Latest project part */
+.sidebyside{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #b2afaf;
+    margin-bottom: 10px;
+}
+.project{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project h1{
+    width: 1130px;
+    color: black;
+    font-size: 55px;
+    text-align: center;
+}
+.fig{
+    width: 380px;
+    height: 260px;
+    color: white;
+    margin: 5px 0px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.fig:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    background-position: top to bottom;
+    opacity: 0.7;
+    transform: translateY(330px);
+    transition: all 0.5s;
+}
+.fig:hover:before{
+    transform: translateY(0);
+}
+.fig .caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.fig:hover .caption{
+    transform: translateY(0);
+    opacity: 1;
+}
+.fig h3{
+    font-size: 30px;
+    color: darkred;
+    margin-bottom: 10px;
+}
+.fig p{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: justify;
+    border-radius: 5px;
+    padding: 10px;
+}
+.fig a{
+    padding: 10px 25px;
+    color: white;
+    border: 2px solid darkred;
+    border-radius: 25px;
+    background-color: darkred;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+                                    /* Contact Us Part */
+.contact{
+    background-color:  rgb(198, 182, 182);
+    width: 100%;
+    height: 100vh;
+}
+.content h1{
+    width: 1130px;
+    color: black;
+    font-size: 65px;
+    text-align: center;
+    margin: auto;
+    padding: 25px 0px;
+}
+
+.space{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 15px;
+}
+label{
+    font-size: large;
+}
+.flew{
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div1{
+    width: 300px;
+    height: 40px;
+    padding: 5px 5px;
+    background-color: #d7d2d2;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 250px;
+    float: left;
+}
+.div5{
+    display: inline-block;
+    width: 600px;
+    height: 170px;
+    padding: 5px 5px;
+    background-color: #dbd7d7;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 45px;
+    margin-left: 350px;
+}
